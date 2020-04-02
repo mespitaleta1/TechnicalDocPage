@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>FreeCodeCamp project - Technical Documentatio page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand|Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav id="navbar" class="nav">
+      <div>
+        <header class="navbar-title">
+          <h1 class="title">HTML</h1>
+        </header>
+        <img src="html-logo.png" alt="logo of html" class="logo" />
+      </div>
+
+      <ul class="navbar-menu">
+        <li class="navbar-menu_item">
+          <a class="nav-link" href="#what_is_html">What is HTML</a>
+        </li>
+
+        <li class="navbar-menu_item">
+          <a class="nav-link" href="#anatomy_of_an_HTML_element"
+            >Anatomy of an HTML element</a
+          >
+        </li>
+
+        <li class="navbar-menu_item">
+          <a class="nav-link" href="#anatomy_of_an_HTML_document"
+            >Anatomy of an HTML document</a
+          >
+        </li>
+
+        <li class="navbar-menu_item">
+          <a class="nav-link" href="#standard_history">Standard History</a>
+        </li>
+
+        <li class="navbar-menu_item">
+          <a class="nav-link" href="#summary">Summary</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main id="main-doc" class="main-content">
+      <!--seccion 1-->
+      <section id="what_is_html" class="main-section">
+        <header>
+          <h2 class="subtitle">What is HTML</h2>
+        </header>
+        <p class="description-text">
+          HTML (HyperText Markup Language) is not a programming language, it is
+          a markup language, used to tell your browser how to structure the
+          pages you visit. It can be as complex or as simple as the web
+          developer wants. HTML consists of a series of elements, which you can
+          use to enclose, delimit or mark different parts of the content to make
+          them appear in a certain way, or act in a certain way. Tags that
+          delimit a piece of content can cause that content to link to another
+          page, italicize a word, and so on.
+        </p>
+      </section>
+      <hr />
+
+      <section class="main-section" id="anatomy_of_an_HTML_element">
+        <header>
+          <h2 class="subtitle">Anatomy of an HTML element</h2>
+        </header>
+        <p class="description-text">
+          Let's explore the paragraph element a bit, The main parts of our
+          element are:
+        </p>
+
+        <ul>
+          <li>
+            <strong>The opening tag:</strong> consists of the name of the
+            element (in this case, p), enclosed in opening and closing angle
+            brackets. This indicates where the element begins or begins to take
+            effect; in this case, where the paragraph begins.
+          </li>
+          <li>
+            <strong>The closing tag:</strong> is the same as the opening tag,
+            except that it includes a forward slash before the item name. This
+            indicates where the element ends; in this case, where the paragraph
+            ends. Not including a closing tag is a common beginner mistake, and
+            can lead to strange results.
+          </li>
+          <li>
+            <strong>The content:</strong> is the content of the element, which
+            in this case is only text.
+          </li>
+          <li>
+            <strong>The element:</strong> it is made up of the sum of the
+            opening tag, the closing tag and the content.
+          </li>
+          <li>
+            <strong>empty elements:</strong>Not all elements follow the above
+            pattern of an opening tag, content, and a closing tag. Some elements
+            consist only of a single tag, which is usually used to insert/embed
+            something in the document at the place it is included.
+          </li>
+        </ul>
+      </section>
+      <hr />
+
+      <section class="main-section" id="anatomy_of_an_HTML_document">
+        <header>
+          <h2 class="subtitle">Anatomy of an HTML document</h2>
+        </header>
+
+        <p class="description-text">
+          That wraps up the basics of individual HTML elements, but they aren't
+          very useful on their own. Now we'll look at how individual elements
+          are combined to form an entire HTML page:
+        </p>
+
+        <code class="shaded-box"
+          >&lt;!DOCTYPE html&gt;<br />
+          &lt;html lang="en"&gt; <br />
+          &lt;head&gt;<br />
+          &lt;meta charset="UTF-8"&gt;<br />
+          &lt;meta name="viewport" content="width=device-width,
+          initial-scale=1.0"&gt; <br />
+          &lt;http-equiv="X-UA-Compatible" content="ie=edge"&gt;<br />
+          &lt;title&gt;document&lt;/title&gt;<br />
+          &lt;/head&gt;<br />
+          &lt;body&gt;<br />
+          &lt;p&gt;
+          <span> this is my page </span>
+          &lt;/p&gt;<br />
+          &lt;/body&gt;<br />
+          &lt;/html&gt;<br /> </code
+        ><br />
+
+        <p class="description-text">
+          Here we have some of the most important tags:
+        </p>
+
+        <dl>
+          <dt><code class="shaded-box shaded">&lt;!DOCTYPE html&gt;</code></dt>
+          <dd>
+            The doctype. In the mists of time, when HTML was young (about
+            1991/2), doctypes were meant to act as links to a set of rules that
+            the HTML page had to follow to be considered good HTML, which could
+            mean automatic error checking and other useful things
+          </dd>
+          <br />
+
+          <dt>
+            <code class="shaded-box shaded">&lt;html&gt; &lt;/html&gt; </code>
+          </dt>
+          <dd>
+            This element wraps all the content on the entire page, and is
+            sometimes known as the root element.
+          </dd>
+          <br />
+
+          <dt>
+            <code class="shaded-box shaded">&lt;head&gt; &lt;/head&gt;</code>
+          </dt>
+          <dd>
+            This element acts as a container for all the stuff you want to
+            include on the HTML page, that isn't the content you are showing to
+            your page's viewers. This includes things like keywords and a page
+            description that you want to appear in search results, CSS to style
+            our content, character set declarations, and more. You'll learn more
+            about this in the next article of the series.
+          </dd>
+          <br />
+
+          <dt>
+            <code class="shaded-box shaded">&lt;meta charset="UTF-8"&gt;</code>
+          </dt>
+          <dd>
+            This element specifies the character set for your document to UTF-8,
+            which includes most characters from the vast majority of human
+            written languages. Essentially, it can now handle any textual
+            content you might put on it. There is no reason not to set this, and
+            it can help avoid some problems later.
+          </dd>
+          <br />
+
+          <dt>
+            <code class="shaded-box shaded">&lt;body&gt; &lt;/body&gt;</code>
+          </dt>
+          <dd>
+            This contains all the content that you want to show to web users
+            when they visit your page, whether that's text, images, videos,
+            games, playable audio tracks, or whatever else.
+          </dd>
+        </dl>
+      </section>
+      <hr />
+
+      <section class="main-section" id="standard_history">
+        <header>
+          <h2 class="subtitle">Standard History</h2>
+        </header>
+        <p class="description-text">
+          In 1989 there were two techniques that allowed linking electronic
+          documents, on the one hand hyperlinks or links (hyperlinks or links)
+          and on the other hand a powerful tag language called SGML. At the
+          time, Tim Berners-Lee, who worked at the European Center for Nuclear
+          Research CERN, revealed to the press that he was working on a system
+          that will allow access to online files that worked on computer
+          networks or electronic machines based on the TCP / IP protocol.
+          Initially, it was developed so that information could be easily shared
+          between scientists from different universities and research institutes
+          around the world.
+        </p>
+
+        <p class="description-text">
+          In the early 1990s, he finally defined HTML as a subset of the
+          well-known SGML and created something even more valuable, the World
+          Wide Web.
+        </p>
+
+        <p class="description-text">
+          Pei-Yuan Wei introduced ViolaWWW, which would work in text mode and on
+          a UNIX operating system.
+        </p>
+
+        <p class="description-text">
+          Work to create a successor to HTML, called HTML +, began in late 1993.
+          HTML + was originally designed to be a superset of HTML that allowed
+          it to gradually evolve from the previous HTML format. The first formal
+          HTML + specification was therefore given version number 2 to
+          distinguish it from previous unofficial proposals. Work on HTML +
+          continued, but never became a standard, despite being the base
+          formally closest to the compositional aspect of current
+          specifications.
+        </p>
+
+        <p class="description-text">
+          The draft HTML 3.0 standard was proposed by the newly formed W3C in
+          March 1995. Many new capabilities were introduced with it; for
+          example, facilities to create tables, make the text flow around the
+          figures and show complex mathematical elements. Although it was
+          designed to be compliant with HTML 2.0, it was too complex to be
+          implemented with the technology of the time, and when the draft
+          standard expired in September 1995, it was abandoned due to lack of
+          support from web browser manufacturers. HTML 3.1 was never officially
+          proposed, and the next standard was HTML 3.2, which abandoned most of
+          the new features of HTML 3.0 and instead adopted many elements
+          initially developed by the Netscape and Mosaic web browsers. The
+          possibility of working with mathematical formulas that had been
+          proposed in HTML 3.0 became integrated into a different standard
+          called MathML.
+        </p>
+
+        <p class="description-text">
+          In 1997 HTML 4.0 was released as a recommendation of the W3C. HTML 4.0
+          adopted many specific elements initially developed for a specific web
+          browser, but at the same time began cleaning up the HTML by noting
+          some of them as "deprecated".
+        </p>
+
+        <p class="description-text">
+          HTML 4.0 implements features like XForms 1.0 that do not need to
+          implement navigation engines that were incompatible with some HTML web
+          pages. In 2004 the W3C reopened the discussion of the evolution of
+          HTML, and the foundations for the HTML5 version were unveiled.
+          However, this work was rejected by W3C members and preference would be
+          given to XML development.
+        </p>
+
+        <p class="description-text">
+          Apple, Mozilla and Opera announced their interest in continuing to
+          work on the project under the name of WHATWG, 20 which is based on
+          backward compatibility with previous technologies.
+        </p>
+
+        <p class="description-text">
+          In 2006, W3C became interested in HTML5 development, and in 2007
+          joined the WHATWG working group to unify the project.
+        </p>
+
+        <p class="description-text">
+          The design in HTML, apart from complying with the specifications of
+          the language, must respect certain web accessibility criteria,
+          following guidelines or the regulations and laws in force in the
+          countries where this concept is regulated. It is available and
+          developed by the W3C through the Web Content Accessibility Guidelines
+          1.0 WCAG (recently updated with the 2.0 specification), although many
+          countries have their own specifications, as is the case of Spain with
+          the UNE 139803 Standard.
+        </p>
+      </section>
+      <hr />
+
+      <section class="main-section" id="summary">
+        <header>
+          <h2 class="subtitle">Summary</h2>
+        </header>
+        <p class="description-text">
+          You've reached the end of the article — we hope you enjoyed your tour
+          of the very basics of HTML! At this point you should understand what
+          the language looks like, how it works at a basic level, and be able to
+          write a few elements and attributes. This is the perfect place to be
+          right now, since the subsequent articles of this module will go into
+          some of the things you have already looked at in a lot more detail,
+          and introduce some new concepts of the language. Stay tuned!
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+          <img
+            style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="¡CSS Válido!"
+          />
+        </a>
+      </p>
+    </footer>
+
+    <script
+      src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
