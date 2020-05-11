@@ -22,10 +22,15 @@ body {
   letter-spacing: 1.5px;
 }
 
+.navbar-menu {
+  padding-left: 10px;
+}
+
 .navbar-menu_item {
   list-style: none;
   display: block;
   padding: 7px;
+  text-align: center;
 }
 
 .nav-link {
@@ -58,7 +63,8 @@ body {
 .main-content {
   margin-left: 25%;
   margin-right: 5%;
-  padding: 5px;
+  padding: 30px 5px 5px;
+  /*padding: 5px;*/
   text-align: justify;
 }
 
@@ -81,7 +87,12 @@ body {
     height: 45px;
   }
 
+  .navbar-menu {
+    padding-left: 40px;
+  }
+
   .navbar-menu_item {
+    text-align: left;
     padding: 0px;
   }
 
