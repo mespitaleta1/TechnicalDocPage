@@ -58,9 +58,3 @@ body {
   margin-left: 25%;
   padding: 5px;
 }
-
-@media screen and (max-width: 320px) {
-  body {
-    background: lightgrey;
-  }
-}
