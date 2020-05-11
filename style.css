@@ -14,6 +14,7 @@ body {
   position: fixed;
   background: #c02e2e;
   color: #fcf6ee;
+  align-items: center;
 }
 
 .title {
@@ -24,7 +25,7 @@ body {
 .navbar-menu_item {
   list-style: none;
   display: block;
-  height: 36px;
+  padding: 7px;
 }
 
 .nav-link {
@@ -39,9 +40,9 @@ body {
 .shaded-box {
   display: inline-block;
   background: lightcoral;
-  width: 50%;
+  width: 75%;
   border-radius: 5px;
-  padding: 0 3px;
+  padding: 3px 10px;
   text-align: left;
 }
 
@@ -50,15 +51,23 @@ body {
   text-align: center;
 }
 
+.special-shaded {
+  width: 23%;
+}
+
 .main-content {
   margin-left: 25%;
+  margin-right: 5%;
   padding: 5px;
+  text-align: justify;
 }
 
 @media (max-width: 768px) {
   .nav {
     width: 100%;
     height: auto;
+    position: relative;
+    align-items: unset;
   }
 
   .navbar-title {
@@ -72,13 +81,26 @@ body {
     height: 45px;
   }
 
+  .navbar-menu_item {
+    padding: 0px;
+  }
+
   .logo {
     width: 45px;
     height: 45px;
   }
 
   .main-content {
-    padding-top: 280px;
+    padding-top: 40px;
     margin: 0px 30px;
+  }
+
+  .shaded {
+    width: 17%;
+    text-align: center;
+  }
+
+  .special-shaded {
+    width: 23%;
   }
 }
